@@ -5,7 +5,7 @@ class Que
     static Semaphore Con = new Semaphore(0);
     static Semaphore Prod = new Semaphore(1);
     
-    void get()		  // to get an item from buffer
+    void get()		  // to get an item from buffer fgit
         {
             try {                // Before consumer can consume an item,   it must acquire a permit from Con
                 	Con.acquire();
